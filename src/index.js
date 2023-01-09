@@ -33,7 +33,7 @@ function onCountryInput() {
                 refs.countryInfo.innerHTML = '';
             }
             //== 3.2.
-            if (countries.length >= 2) {
+            if (countries.length <= 10) {
                 const markup = countries.map(country => countryListFromTemplate(country));
                 refs.countryList.innerHTML = markup.join('');
                 refs.countryInfo.innerHTML = '';
